@@ -193,6 +193,13 @@ main section[id] {
 	margin-top: auto;
 }
 
+@media (min-width: 721px) {
+	.hero-copy .introduction {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+}
+
 .eyebrow {
 	margin: 0 0 16px;
 	color: var(--stanford-red);
@@ -221,7 +228,7 @@ h3 {
 h1 {
 	margin-bottom: 18px;
 	font-size: clamp(44px, 6vw, 64px);
-	letter-spacing: 0;
+	letter-spacing: 0.02em;
 	line-height: 1.02;
 }
 
@@ -233,10 +240,33 @@ h1 {
 }
 
 .affiliations {
-	margin-bottom: 28px;
+	margin-bottom: 18px;
 	color: var(--muted);
 	font-size: 14px;
 	line-height: 1.7;
+}
+
+.affiliation-groups {
+	margin-bottom: 26px;
+	color: #3e4144;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: clamp(16px, 1.55vw, 18px);
+	line-height: 1.55;
+}
+
+.affiliation-label {
+	display: block;
+	margin-bottom: 6px;
+	color: var(--stanford-red);
+	font-family: system-ui, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.affiliation-groups a {
+	white-space: nowrap;
 }
 
 .introduction {
