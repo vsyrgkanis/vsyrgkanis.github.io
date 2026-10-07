@@ -1,0 +1,279 @@
+<html>
+    
+<head>
+    <title>6.853: Topics in Algorithmic Game Theory, Spring 2019 </title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+
+<body>
+
+
+
+<center>
+
+<h1>6.853: Algorithmic Game Theory and Data Science</h1>
+
+<h3>Spring 2019</h3>
+
+<hr width="60%">
+
+</center>
+
+
+<div id="main-content">
+
+
+<p>How do you setup an auction to optimize revenue? How do you price cloud resources to optimize efficiency? More broadly, how do you solve an optimization problem when your inputs are supplied by strategic agents with a keen interest on your solution, and who may therefore misreport their inputs to manipulate the result? How do you inform all these answers when you have access to data?
+
+</p>
+
+<p>This class, situated at the intersection of Algorithms, Game Theory and Machine Learning, will present an analytical and computational framework to approach optimization and inference problems of this form. In doing so, we will also look at the foundations of Game Theory, Learning Theory and Econometrics.</p>
+
+
+
+
+
+<a name="staff"></a>
+
+<h2>Course Information</h2>
+
+
+
+<ul>
+
+<li>
+    <b>
+        Instructors:
+    </b>
+        <a href="http://people.csail.mit.edu/costis/">Constantinos Daskalakis</a>, 
+        <a href="http://www.vsyrgkanis.com">Vasilis Syrgkanis</a>
+    <br/>
+    Office Hours: TBA
+</li>
+
+<li>
+    <b>TAs:</b> <a href="http://www.mit.edu/~shelard/">Devendra Shelar</a>, <a href="http://www.mit.edu/~govind/">Govind Ramnarayan</a>
+</li>
+
+<li>
+    <b>Useful Links:</b> <a href="https://stellar.mit.edu/S/course/6/sp19/6.853/index.html">Stellar webpage</a>, <a href="https://piazza.com/class/jrr81wuvjxg2hv">Piazza webpage</a>
+</li>
+
+<li>
+    <b>Lecture:</b> Tuesdays and Thursdays 2:30-4:00, 54-100 (both are subject to change).
+
+</li>
+
+<li>
+    <b>Textbooks:</b>
+    <ol>
+        <li>Parts of the course will follow the book <a href="http://www.cambridge.org/journals/nisan/downloads/Nisan_Non-printable.pdf">Algorithmic Game Theory</a>, by Noam Nisan, Tim Roughgarden, Eva Tardos, Vijay V. Vazirani (eds.), Cambridge University Press, September 2007.
+        </li>
+        <li>
+            For extensive introduction to online learning and online convex optimization: <a href="http://www.cs.huji.ac.il/~shais/papers/OLsurvey.pdf">Online Learning and Online
+Convex Optimization</a>, by Shai Shalev-Shwartz, Foundations and Trends in
+Machine Learning    
+        </li>
+        <li>
+            For extensive introduction to mechanism design, revenue maximization and Myerson's theory: <a href="http://jasonhartline.com/MDnA/">Mechanism Design and Approximation</a>, by Jason Hartline
+        </li>
+        <li>
+            For extensive introduction to PAC Learning: <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf">Understanding Machine Learning:
+From Theory to Algorithms</a>, by Shai Shalev-Shwartz, Cambridge University Press, 2014
+        </li>
+    </ol>
+</li>
+
+<li>
+    <b>Lecture Notes:</b> Lecture notes and/or presentations will be provided.
+</li>
+
+<li>
+    <b>Prerequisites:</b> A course in algorithms (6.046 or equivalent), probability (6.041 or equivalent), and discrete mathematics (6.042 or equivalent). 
+</li>
+
+<li>
+    <b>Assessment:</b> 65% problem sets (each problem (not problem set) counts equally), project 35%
+</li>
+
+</ul>
+
+
+
+<a name="outline"></a>
+
+<h2>Course Outline</h2>
+
+
+
+There is a significant dynamic component to the course, as topics drop
+
+in and out, or get longer or shorter treatment, depending on audience
+
+interest/reaction/resistence.  We consider this a feature.  Given this,
+
+here is a rough outline of the course material:
+
+
+
+<p><b>Chapter 1.</b> Game Theory and Online Learning Theory</p>
+
+<ol>
+
+<li> Games, equilibria, minimax theorem, LP duality.</li>
+
+<li> Online learning, online convex optimization, minimax theorem from no-regret learning. </li>
+
+<li> Nash's theorem, complexity of Nash equilibria, PPAD. </li>
+
+<li> Online learning and general games: correlated equilibrium via no-regret learning, quality of no-regret outcomes (price of anarchy) </li>
+
+</ol>
+
+
+
+<p><b>Chapter 2.</b> Mechanism Design and Statistical Learning Theory</p>
+
+<ol>
+
+<li> Mechanism design: truthfulness, revelation principle, Myerson's lemma, Vickrey auction, Myerson's optimal auction </li>
+
+<li> Simple vs Optimal auctions: single-sample mechanism, prophet inequality </li>
+
+<li> Intro to Statistical Learning Theory: Rademacher complexity, Growth number </li>
+
+<li> Statistical Learning Theory and Mechanism Design: learning optimal auctions from samples </li>
+
+<li> Online learning of mechanisms </li>
+
+</ol>
+
+
+
+<p><b>Chapter 3.</b> Econometrics and Computer Science</p>
+
+<ol>
+
+<li> Intro to estimation and inference</li>
+
+<li> Econometrics in Games </li>
+
+<li> Econometrics in Auctions: Revenue inference and A/B testing in auctions, Welfare guarantees from data</li>
+
+<li> Econometrics for no-regret learners</li>
+
+<li> Causal inference and machine learning </li>
+
+</ol>
+
+</p>
+
+
+
+<h2> Homework </h2>
+
+<ol>
+
+    <li>Problem Set 1: 3/15 (due: 3/4)</li>
+
+    <li>Problem Set 2: 3/8 (due: 3/23)</li>
+
+    <li>Problem Set 3: 3/23 (due: 4/10)</li>
+
+    <li>Problem Set 4: 4/11 (due: 4/25)</li>
+
+    <li>Problem Set 5: 5/2 (due: 5/10)</li>
+
+</ol>
+
+
+
+<h2>Projects</h2>
+
+<p>A list of project proposals will soon be posted on <a href="https://stellar.mit.edu/S/course/6/sp19/6.853/index.html">Stellar</a>.</p>
+
+<ol>
+
+    <li>Project Proposal: due 4/3</li>
+
+    <li>Final Project: due 5/10</li>
+
+</ol>
+
+
+
+<a name="notes"></a>
+
+<h2> Lectures</h2>
+
+
+
+<p>Schedule subject to change</p>
+
+
+
+<ol>
+
+    <li> <b>Lecture 2.</b> <i>Games, equilibria, minimax theorem, LP duality.</i> <a href="lec2.pdf">[Lecture 2]</a></li>
+
+    <li> <b>Lecture 3.</b> <i> Online learning, follow the regularized leader</i> <a href="lecture3.pdf">[Lecture 3]</a> </li>
+    
+    <li> <b>Lecture 4.</b> <i> Online convex optimization, minimax theorem from no-regret learning</i> <a href="lecture4.pdf">[Lecture 4]</a></li>
+    
+    <li> <b>Lecture 5.</b> <i>Nash's theorem for general games</i> <a href="lec5.pdf">[Lecture 5]</a></li>
+
+    <li> <b>Lecture 6.</b> <i> Online learning and general games: correlated equilibrium via no-regret learning</i> <a href="lecture06.pdf">[Lecture 6]</a></li>
+    
+    <li> Lecture 7: Complexity of Nash equilibria, PPAD</li>
+
+    <li> <b>Lectures 8, 9:</b> <i>Mechanism design: truthfulness, revelation principle, VCG</i> <a href="Lecture_8__Mechanism_Design.pdf">[Lecture 8]</a> <a href="Lecture_9.pdf">[Lecture 9]</a></li>
+
+    <li> <b>Lectures 10, 11:</b> <i>Revenue maximization: Myerson's lemma, Myerson's optimal auction</i> <a href="lecture10.pdf">[Lecture 10]</a> <a href="lecture11.pdf">[Lecture 11]</a></li>
+
+    <li> <b>Lecture 12:</b> <i>Simple vs Optimal auctions: single-sample mechanism, prophet inequality</i> <a href="6_853_Lecture_12___Simple_vs__Optimal_Auctions.pdf">[Lecture 12]</a></li>
+
+    <li> <b>Lecture 13:</b> <i>Simple vs Optimal auctions: Non-truthful auctions, price of anarchy</i> <a href="poa_in_auctions.pptx">[Lecture 13]</a></li>
+
+    <li> <b>Lecture 14, 15:</b> <i>Intro to Statistical Learning Theory: Rademacher complexity, Growth number</i> <a href="Lecture 14- Learning_from_Samples.pdf">[Lecture 14]</a> <a href="Lecture 15 - Learning_Theory_Rademacher_Comp.pdf">[Lecture 15]</a></li>
+
+    <li> <b>Lecture 16, 17:</b> <i>Statistical Learning Theory and Mechanism Design: learning optimal auctions from samples</i> <a href="lecture16.pdf">[Lecture 16]</a> <a href="lecture17.pdf">[Lecture 17]</a></li>
+
+    <li> Lecture 18: Online learning of mechanisms</li>
+
+    <li> Lecture 19, 20, 21: Intro to Estimation: learning CDFs and density functions</li>
+
+    <li> Lecture 22, 23: Econometrics in Auctions: estimation of value distributions, revenue inference, welfare inference</li>
+
+    <li> Lecture 24, 25: Causal inference and machine learning: policy learning, heterogeneous treatment effect estimation</li>
+
+</ol>
+
+
+
+<h2>Online Resources</h2>
+
+
+
+Previous incarnation of this class:
+
+<ul>
+
+<li><a href="https://stellar.mit.edu/S/course/6/sp17/6.853/index.html">Algorithmic Game Theory and Data Science, Spring 2017</a></li>
+
+</ul>
+
+Relevant workshops at recent conferences:
+<ul>
+    <li><a href="https://sites.google.com/site/agtanddatascienceworkshop2015/schedule">First Workshop on Algorithmic Game Theory and Data Science, 2015</a> </li>
+    <li><a href="https://sites.google.com/site/agtanddatascienceworkshop2016/schedule">Second Workshop on Algorithmic Game Theory and Data Science, 2016</a><a></a> </li>
+		
+		 <li><a href="https://sites.google.com/site/agtds17/schedule">Third Workshop on Algorithmic Game Theory and Data Science, 2017</a><a></a> </li>
+	<li><a href="http://www.cs.cmu.edu/~nhaghtal/mlstrat/">NIPS17 Workshop on Learning in the Presence of Strategic Behavior</a></li>
+	<li><a href="https://sgo-workshop.github.io/">NeurIPS 2018 smooth games and optimization workshop</a></li>
+</ul>
+
+</div>
+
+
+</body></html>
+
