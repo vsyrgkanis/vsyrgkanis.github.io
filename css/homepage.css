@@ -427,13 +427,53 @@ h1 {
 	margin-bottom: 0;
 }
 
+.latest-news {
+	border-top: 1px solid var(--line);
+	background: var(--wash);
+}
+
+.latest-news-inner {
+	padding-block: clamp(44px, 6vw, 64px);
+}
+
+.latest-news .section-heading {
+	margin-bottom: 22px;
+}
+
+.latest-news-list {
+	max-width: 900px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.latest-news-list li {
+	display: grid;
+	grid-template-columns: 150px minmax(0, 1fr);
+	gap: 20px;
+	padding: 14px 0;
+	border-top: 1px solid var(--line);
+	font-size: 14px;
+}
+
+.latest-news-list time {
+	color: var(--muted);
+	font-size: 13px;
+}
+
+.latest-news-more {
+	margin: 20px 0 0;
+	font-size: 14px;
+	font-weight: 650;
+}
+
 .student-guidance {
-	background: #fff;
+	background: var(--wash);
 }
 
 .advising {
 	border-top: 1px solid var(--line);
-	background: var(--wash);
+	background: var(--paper);
 }
 
 .advising-inner {
@@ -450,7 +490,7 @@ h1 {
 .advising-group {
 	padding: 20px;
 	border-top: 2px solid var(--stanford-red);
-	background: #fff;
+	background: var(--wash);
 }
 
 .advising-group h3 {
@@ -484,7 +524,7 @@ h1 {
 }
 
 .academic-background {
-	background: var(--wash);
+	background: var(--paper);
 }
 
 .academic-background-inner {
@@ -497,7 +537,7 @@ h1 {
 
 .speaker-kit {
 	border-top: 1px solid var(--line);
-	background: var(--wash);
+	background: var(--paper);
 }
 
 .speaker-inner {
@@ -585,7 +625,7 @@ h1 {
 
 .teaching-materials {
 	border-top: 1px solid var(--line);
-	background: #fff;
+	background: var(--wash);
 }
 
 .teaching-inner {
@@ -643,7 +683,7 @@ h1 {
 
 .current-publications {
 	border-top: 1px solid var(--line);
-	background: #fff;
+	background: var(--wash);
 }
 
 .publications-inner {
@@ -871,6 +911,11 @@ h1 {
 
 	.advising-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.latest-news-list li {
+		grid-template-columns: 1fr;
+		gap: 2px;
 	}
 
 	.hero {
