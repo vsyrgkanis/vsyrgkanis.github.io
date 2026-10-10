@@ -532,12 +532,7 @@ h1 {
 }
 
 .career-timeline {
-	max-width: 900px;
-	margin-bottom: clamp(42px, 6vw, 64px);
-}
-
-.career-timeline > .eyebrow {
-	margin-bottom: 18px;
+	margin-block: 28px clamp(32px, 5vw, 48px);
 }
 
 .career-timeline-list {
