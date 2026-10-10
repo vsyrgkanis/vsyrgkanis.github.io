@@ -531,6 +531,64 @@ h1 {
 	padding-block: clamp(50px, 7vw, 76px);
 }
 
+.career-timeline {
+	max-width: 900px;
+	margin-bottom: clamp(42px, 6vw, 64px);
+}
+
+.career-timeline > .eyebrow {
+	margin-bottom: 18px;
+}
+
+.career-timeline-list {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.career-timeline-list li {
+	position: relative;
+	min-width: 0;
+	padding: 30px 18px 0 0;
+	border-top: 2px solid var(--line);
+}
+
+.career-timeline-list li::before {
+	position: absolute;
+	top: -7px;
+	left: 0;
+	width: 12px;
+	height: 12px;
+	border: 2px solid var(--paper);
+	border-radius: 50%;
+	background: var(--stanford-red);
+	box-shadow: 0 0 0 1px var(--stanford-red);
+	content: "";
+}
+
+.career-timeline-period {
+	display: block;
+	margin-bottom: 8px;
+	color: var(--stanford-red);
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.career-timeline-list li p {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.55;
+}
+
+.career-timeline-list li p a {
+	font-weight: 600;
+}
+
 .academic-background .section-heading {
 	max-width: 900px;
 }
@@ -911,6 +969,36 @@ h1 {
 
 	.advising-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.career-timeline-list {
+		grid-template-columns: 1fr;
+		gap: 0;
+		margin-left: 5px;
+	}
+
+	.career-timeline-list li {
+		padding: 0 0 22px 28px;
+		border-top: 0;
+		border-left: 2px solid var(--line);
+	}
+
+	.career-timeline-list li:last-child {
+		padding-bottom: 0;
+		border-left-color: transparent;
+	}
+
+	.career-timeline-list li::before {
+		top: 3px;
+		left: -7px;
+	}
+
+	.career-timeline-period {
+		font-size: 12px;
+	}
+
+	.career-timeline-list li p {
+		font-size: 14px;
 	}
 
 	.latest-news-list li {
